@@ -1,30 +1,40 @@
 # python main.py -m screen:droid2,portrait,scale=.75
 
+# from kivy.app import App
+# from kivy.uix.button import Button 
+# from kivy.uix.gridlayout import GridLayout
+# from kivy.properties import ObjectProperty
+
+# class Container(GridLayout):
+
+# 	text_input_widget = ObjectProperty()
+# 	label_widget = ObjectProperty()
+
+# 	def change_text(self):
+# 		self.label_widget.text = \
+# 			self.text_input_widget.text.upper()
+# 		self.text_input_widget.text = ''	
+
+# class NewApp(App):
+# 	def build(self):
+# 		return Container()
+
+
+# def main():
+# 	NewApp().run()
+
+# if __name__ == "__main__":
+# 	main()
+
+
 from kivy.app import App
 from kivy.uix.button import Button 
-from kivy.uix.gridlayout import GridLayout
-from kivy.properties import ObjectProperty
-
-class Container(GridLayout):
-
-	text_input_widget = ObjectProperty()
-	label_widget = ObjectProperty()
-
-	def change_text(self):
-		self.label_widget.text = \
-			self.text_input_widget.text.upper()
-		self.text_input_widget.text = ''	
 
 class NewApp(App):
 	def build(self):
-		return Container()
+		return Button(text='Hello world')
 
-
-def main():
-	NewApp().run()
-
-if __name__ == "__main__":
-	main()
+NewApp().run()
 
 # <ItemLabel@Label>:
 #     font_size: '25sp'
